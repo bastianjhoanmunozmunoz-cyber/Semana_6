@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ink">#17212B</color>
+    <color name="paper">#F5F7FA</color>
+    <color name="accent">#6C4AB6</color>
+    <color name="accent_dark">#4F338E</color>
+    <color name="muted">#667085</color>
+    <color name="photo_bg">#E7E3F0</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+</resources>

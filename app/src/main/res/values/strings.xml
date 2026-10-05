@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">FotoBox</string>
+    <string name="titulo_inicio">Nueva captura</string>
+    <string name="subtitulo_inicio">Prepara tu foto y ponle un nombre</string>
+    <string name="hacer_foto">CARGAR FOTO</string>
+    <string name="aceptar">GUARDAR Y VER</string>
+    <string name="volver">VOLVER A EDITAR</string>
+    <string name="hint_nombre">Nombre de la foto</string>
+    <string name="desc_foto">Vista previa de la foto</string>
+    <string name="error_nombre">Escribe un nombre antes de continuar</string>
+    <string name="sin_foto">No cargaste una foto. Vuelve para agregar una.</string>
+    <string name="sin_nombre">Sin nombre</string>
+    <string name="titulo_resultado">Foto guardada</string>
+    <string name="subtitulo_resultado">Así quedó tu registro</string>
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/paper"
+    android:paddingStart="22dp"
+    android:paddingTop="24dp"
+    android:paddingEnd="22dp"
+    android:paddingBottom="18dp"
+    tools:context=".ResultadoActivity">
+
+    <TextView
+        android:id="@+id/TVResultadoTitulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_resultado"
+        android:textColor="@color/ink"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TVResultadoSubtitulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/subtitulo_resultado"
+        android:textColor="@color/muted"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TVResultadoTitulo" />
+
+    <TextView
+        android:id="@+id/TVNombreFoto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:textColor="@color/accent_dark"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TVResultadoSubtitulo" />
+
+    <ImageView
+        android:id="@+id/IVResultado"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_photo"
+        android:contentDescription="@string/desc_foto"
+        android:padding="8dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/BTVolver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TVNombreFoto" />
+
+    <TextView
+        android:id="@+id/TVSinFoto"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_photo"
+        android:gravity="center"
+        android:padding="24dp"
+        android:text="@string/sin_foto"
+        android:textColor="@color/muted"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/BTVolver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TVNombreFoto" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/BTVolver"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:text="@string/volver"
+        android:textStyle="bold"
+        app:backgroundTint="@color/accent"
+        app:cornerRadius="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
